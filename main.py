@@ -13,7 +13,7 @@ from telegram.ext import (
     ContextTypes,
 )
 
-TOKEN = "8864798043:AAHHCvPs_LUW_VWTC486bdUHy0goHNOuHXM"
+TOKEN = "your_bot_token"
 WEBAPP_URL = os.environ.get("WEBAPP_URL", "").strip()
 
 logging.basicConfig(
