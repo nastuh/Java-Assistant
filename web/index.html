@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Java Уроки</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <button id="back-btn" class="hidden">‹</button>
+        <div class="header-left">
+            <div class="logo" id="header-logo">Java</div>
+            <div class="header-text">
+                <h1 id="header-title">Java Уроки</h1>
+                <p id="header-subtitle">Изучай Java шаг за шагом</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="content"></main>
+
+    <nav id="tabs">
+        <button class="tab active" data-tab="home">
+            <span class="tab-icon">⌂</span>
+            <span class="tab-label">Главная</span>
+        </button>
+        <button class="tab" data-tab="topics">
+            <span class="tab-icon">▤</span>
+            <span class="tab-label">Уроки</span>
+        </button>
+        <button class="tab" data-tab="examples">
+            <span class="tab-icon">&lt;/&gt;</span>
+            <span class="tab-label">Примеры</span>
+        </button>
+        <button class="tab" data-tab="contacts">
+            <span class="tab-icon">@</span>
+            <span class="tab-label">Контакты</span>
+        </button>
+        <button class="tab" data-tab="profile">
+            <span class="tab-icon">◯</span>
+            <span class="tab-label">Профиль</span>
+        </button>
+    </nav>
+
+    <div id="modal-overlay" class="hidden">
+        <div id="modal">
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <div id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
